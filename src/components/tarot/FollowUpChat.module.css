@@ -1,0 +1,93 @@
+.chat {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.bubble {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.user .bubble {
+  background: linear-gradient(90deg, var(--violet), #8b6aff);
+  color: #150c33;
+}
+
+.assistant .bubble {
+  background: rgba(10, 6, 26, 0.5);
+  border: 1px solid var(--line);
+}
+
+.bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.input {
+  flex: 1;
+  background: rgba(10, 6, 26, 0.6);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  padding: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px rgba(169, 136, 255, 0.15);
+}
+
+.input:disabled {
+  opacity: 0.6;
+}
+
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  background: var(--violet2);
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: middle;
+}
+
+.loading {
+  opacity: 0.75;
+}
+
+.error {
+  color: #ff9b9b;
+  font-size: 13px;
+  margin: 0 0 8px;
+}

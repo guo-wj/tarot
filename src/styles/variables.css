@@ -1,0 +1,26 @@
+:root {
+  --bg: #0b0720;
+  --bg2: #140b32;
+  --panel: rgba(30, 18, 66, 0.55);
+  --panel-solid: #1a1038;
+  --line: rgba(179, 148, 255, 0.18);
+  --gold: #e6c17a;
+  --gold2: #f4dca0;
+  --violet: #a988ff;
+  --violet2: #c9b3ff;
+  --text: #efeaff;
+  --muted: #a99fc9;
+  --glow: 0 0 30px rgba(169, 136, 255, 0.35);
+  --radius: 18px;
+  --card-w: 120px;
+  --card-h: 200px;
+  --font: 'Segoe UI', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --serif: 'Georgia', 'Songti SC', serif;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --card-w: 100px;
+    --card-h: 168px;
+  }
+}

@@ -1,0 +1,50 @@
+.panel {
+  margin-top: 24px;
+}
+
+.textarea {
+  width: 100%;
+  background: rgba(10, 6, 26, 0.6);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  padding: 16px;
+  resize: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+.textarea:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px rgba(169, 136, 255, 0.15);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.masterTitle {
+  margin-top: 26px;
+  color: var(--gold2);
+  font-family: var(--serif);
+}
+
+.masters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}

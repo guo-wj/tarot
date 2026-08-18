@@ -1,0 +1,103 @@
+.stage {
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.deck {
+  position: relative;
+  width: var(--card-w);
+  height: var(--card-h);
+  margin: 10px auto 0;
+}
+
+.back {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #241448, #3a2470);
+  border: 1px solid var(--gold);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: var(--gold);
+}
+
+.shuffling .back {
+  animation: shuffle 0.6s ease-in-out infinite;
+}
+
+@keyframes shuffle {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(-40px, -8px) rotate(-8deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0);
+  }
+  75% {
+    transform: translate(40px, -8px) rotate(8deg);
+  }
+}
+
+.shuffleWrap {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.fan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 760px;
+  margin: 20px auto 0;
+}
+
+.card {
+  width: 64px;
+  height: 106px;
+  border-radius: 10px;
+  background: linear-gradient(160deg, #241448, #3a2470);
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: var(--gold);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--glow);
+}
+
+.picked {
+  transform: translateY(-10px);
+  border-color: var(--violet2);
+  box-shadow: var(--glow);
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.pickInfo {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 16px;
+}

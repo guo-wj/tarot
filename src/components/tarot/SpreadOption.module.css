@@ -1,0 +1,48 @@
+.spread {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  cursor: pointer;
+  transition: 0.25s;
+  text-align: center;
+  font: inherit;
+  color: var(--text);
+}
+
+.spread:hover {
+  transform: translateY(-4px);
+  border-color: var(--violet);
+  box-shadow: var(--glow);
+}
+
+.selected {
+  border-color: var(--gold);
+}
+
+.diagram {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.slot {
+  width: 24px;
+  height: 38px;
+  border-radius: 5px;
+  background: linear-gradient(160deg, #2a1a54, #402676);
+  border: 1px solid var(--gold);
+}
+
+.spread h4 {
+  font-size: 17px;
+}
+
+.spread p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+}

@@ -1,0 +1,29 @@
+.chip {
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  background: rgba(10, 6, 26, 0.4);
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chip:hover {
+  color: var(--text);
+  border-color: var(--violet);
+}
+
+.chip:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.chip:disabled:hover {
+  color: var(--muted);
+  border-color: var(--line);
+}
+
+.active {
+  color: var(--gold);
+}

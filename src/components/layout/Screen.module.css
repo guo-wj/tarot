@@ -1,0 +1,4 @@
+.screen {
+  display: block;
+  animation: fade 0.5s ease;
+}

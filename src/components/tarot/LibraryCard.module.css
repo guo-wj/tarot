@@ -1,0 +1,38 @@
+.card {
+  aspect-ratio: 0.62;
+  border-radius: 12px;
+  background: linear-gradient(170deg, #1c1140, #160c33);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+  font: inherit;
+  color: var(--text);
+}
+
+.card:hover {
+  border-color: var(--gold);
+  box-shadow: var(--glow);
+  transform: translateY(-3px);
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+.name {
+  font-size: 11px;
+  color: var(--gold2);
+  margin-top: 8px;
+  font-family: var(--serif);
+}
+
+.enName {
+  font-size: 10px;
+  color: var(--muted);
+}

@@ -1,0 +1,44 @@
+.readText {
+  line-height: 1.85;
+  color: #e4defb;
+  font-size: 15px;
+}
+
+.readText h4 {
+  color: var(--gold2);
+  font-family: var(--serif);
+  margin: 18px 0 6px;
+  font-size: 17px;
+}
+
+.gold {
+  color: var(--gold2);
+  font-weight: 700;
+}
+
+.violet {
+  color: var(--violet2);
+  font-weight: 700;
+}
+
+.cursor {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  background: var(--violet2);
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: middle;
+}
+
+.status {
+  color: #e4defb;
+  font-size: 15px;
+  line-height: 1.85;
+  min-height: 48px;
+}
+
+.error {
+  color: #ff9b9b;
+  margin-bottom: 12px;
+}

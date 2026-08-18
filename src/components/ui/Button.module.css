@@ -1,0 +1,41 @@
+.btn {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 30px;
+  font-size: 16px;
+  transition: 0.25s;
+  font-weight: 600;
+}
+
+.btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.primary {
+  background: linear-gradient(90deg, var(--violet), var(--gold));
+  color: #1a1038;
+  box-shadow: var(--glow);
+}
+
+.primary:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 34px rgba(169, 136, 255, 0.55);
+}
+
+.ghost {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.ghost:not(:disabled):hover {
+  border-color: var(--violet);
+}
+
+.small {
+  padding: 9px 18px;
+  font-size: 14px;
+}

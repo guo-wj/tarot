@@ -1,0 +1,58 @@
+.revealRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tapHint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.reading {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 26px;
+  margin-top: 30px;
+  backdrop-filter: blur(8px);
+}
+
+.who {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  background: linear-gradient(160deg, #2a1a54, #402676);
+  flex: none;
+}
+
+.name {
+  font-family: var(--serif);
+  color: var(--gold);
+}
+
+.role {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.again {
+  text-align: center;
+  margin-top: 24px;
+}

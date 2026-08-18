@@ -1,0 +1,19 @@
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 26px 0 6px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.on {
+  background: var(--gold);
+  box-shadow: 0 0 10px var(--gold);
+}
