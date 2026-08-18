@@ -42,10 +42,6 @@ export function HomeScreen() {
           </button>
         ))}
       </div>
-
-      <p className={styles.footnote}>
-        这是一个交互原型 (prototype)。牌面与解读为演示内容,用于展示完整的占卜流程与界面。
-      </p>
     </>
   );
 }

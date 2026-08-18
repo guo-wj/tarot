@@ -4,15 +4,18 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
+html {
+  min-height: 100%;
+  background-color: var(--bg);
 }
 
 body {
   font-family: var(--font);
   color: var(--text);
-  background: radial-gradient(120% 100% at 50% -10%, #1e1147 0%, var(--bg) 55%, #060312 100%);
+  background-color: var(--bg);
+  background-image: radial-gradient(120% 80vh at 50% -10%, #1e1147 0%, transparent 70%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow-x: hidden;
   min-height: 100vh;
   position: relative;

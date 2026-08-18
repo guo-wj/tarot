@@ -72,12 +72,3 @@
   margin-top: 6px;
   line-height: 1.5;
 }
-
-.footnote {
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 50px;
-  line-height: 1.6;
-  opacity: 0.7;
-}
